@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco Alegria Tropical</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bloco Alegria Tropical 🎭🎉</h1>
+    <div class="card">
+        <p>Venha curtir o melhor do Carnaval! Música, dança e alegria garantidas!</p>
+        <p><strong>📅 10 de Fevereiro | 🕒 16h | 📍 Av. da Folia, Centro</strong></p>
+        <button class="button" onclick="confirmarPresenca()">Participe!</button>
+        <p id="confirmacao" style="color: green; font-weight: bold; display: none;">🎊 Presença confirmada! Nos vemos lá! 🎊</p>
+    </div>
+
+    <script>
+        function confirmarPresenca() {
+            document.getElementById("confirmacao").style.display = "block";
+        }
+    </script>
+</body>
+</html>
