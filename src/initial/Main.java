@@ -114,5 +114,64 @@ public class Main {
         }else{
             System.out.println("IDADE INVÁLIDA!");
         }
+
+
+        //ESTRUTURA DE ESCOLHA
+
+        int valor = 0;
+
+        switch(valor){
+            case 1:
+                System.out.println("O valor é 1!");
+                break;
+            case 5:
+                System.out.println("O valor é 5!");
+                break;
+            default:
+                System.out.println("O valor não foi identificado!");
+        }
+
+        //ESTRUTURA DE REPETIÇÃO
+
+        int contador = 0;
+        while(contador < 5){
+            System.out.println("Estou em execução!");
+            contador++; //Incremento - contador = contador + 1
+        }
+
+        System.out.println("__________________");
+
+        contador = 0;
+        while(true){
+            System.out.println("Estou em execução!");
+            if(contador == 4) {
+                break;
+            }
+            contador++; //Incremento - contador = contador + 1
+        }
+
+        //Pelo menos uma única vez o bloco de código será executado sendo a condição falsa
+        do{
+            System.out.println("Estou em execução!");
+        }while(false);
+
+        for(int i = 3; i >= 0; i--){
+            System.out.println(i);
+        }
+
+        for(int i = 0; i < 3; i++){
+            System.out.println(i);
+        }
+
+        int i = 0;
+        int x;
+
+        //Pós incremento-decremento
+        x = i++; // x = i = i + 1 -> 0
+        i--;
+
+        //Pré incremento-decremento
+        x = ++i; // x = i + 1 -> 1
+        --i;
     }
 }
